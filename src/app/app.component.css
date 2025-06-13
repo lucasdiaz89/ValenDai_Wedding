@@ -29,9 +29,7 @@ html, body, .main {
   transform: scale(1) translateY(0);
 }
 .card-presentacion {
-  background: none;
-  background: url('/assets/weddingBG.jpg') center center/cover no-repeat;
-  background-color: transparent;
+  background-color:#FDFCF8 ;
   position: relative;
   z-index: 1;
 }
