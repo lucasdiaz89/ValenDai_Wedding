@@ -44,6 +44,12 @@ html, body, .main {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
 }
 .card-tiempo h2 {
   font-size: 1.8rem;
@@ -58,13 +64,23 @@ html, body, .main {
   gap: 15px;
   font-weight: 700;
 }
+.countdown-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
 .time-box {
   background: #3498db;
   color: white;
   font-size: 2.5rem;
-  min-width: 65px;
-  padding: 15px 10px;
-  border-radius: 10px;
+  min-width: 60px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0 0.2rem;
   box-shadow: 0 4px 10px rgba(52, 152, 219, 0.5);
   user-select: none;
   letter-spacing: 1.5px;
@@ -269,6 +285,17 @@ html, body, .main {
   }
   h1, h2 {
     font-size: 2rem;
+  }
+  .countdown-responsive {
+    gap: 0.3rem 0.7rem;
+  }
+  .time-box {
+    font-size: 1.3rem;
+    padding: 0.4rem 0.7rem;
+    min-width: 36px;
+  }
+  .label {
+    font-size: 0.9rem;
   }
 }
 .presentacion-nombres, .presentacion-frase {
