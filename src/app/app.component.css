@@ -42,20 +42,27 @@ html, body, .main {
   background: url('/assets/wedding_bg2.jpg') center center/cover no-repeat;
   background-color: transparent;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 2rem 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
 }
 .card-tiempo h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
   color: #2c3e50;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-weight: 700;
 }
 .countdown-responsive {
   display: flex;
@@ -65,24 +72,19 @@ html, body, .main {
   align-items: center;
   margin: 1.5rem 0;
 }
-#countdown {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  font-weight: 700;
-}
 .time-box {
   background: #3498db;
   color: white;
   font-size: 2.5rem;
-  text-align: center;
   min-width: 65px;
-  padding: 15px 10px;
+  padding: 0.7rem 1.2rem;
+  min-width: 60px;
+  text-align: center;
+  margin: 0 0.2rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(52, 152, 219, 0.5);
   user-select: none;
   letter-spacing: 1.5px;
-
 }
 
 .label {
@@ -290,8 +292,11 @@ html, body, .main {
   }
   .time-box {
     font-size: 1.3rem;
-    padding: 0.4rem 0.4rem;
+    padding: 0.4rem 0.7rem;
     min-width: 36px;
+  }
+  .label {
+    font-size: 0.9rem;
   }
 }
 .presentacion-nombres, .presentacion-frase {
